@@ -1,44 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Équipes – AS Plouhinec</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #FFD700;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li a {
+      padding: 8px 12px;
+      background: #333;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .subnav {
+      margin: 20px auto;
+      text-align: center;
+    }
+    .subnav a {
+      margin: 5px;
+      text-decoration: none;
+      color: #222;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="Logo AS Plouhinec" class="logo">
+    <img src="images/logo.jpg" alt="Logo AS Plouhinec" class="logo" />
     <h1>AS Plouhinec</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="equipes.html">Équipes</a></li>
-        <li><a href="#">Résultats</a></li>
-        <li><a href="#">Calendrier</a></li>
-        <li><a href="#">Actualités</a></li>
-        <li><a href="#">Photos</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="equipes.html#equipeA">Équipe A</a></li>
+        <li><a href="equipes.html#equipeB">Équipe B</a></li>
+        <li><a href="equipes.html#feminines">Féminines</a></li>
+        <li><a href="equipes.html#u17">U17</a></li>
+        <li><a href="equipes.html#u15">U15</a></li>
+        <li><a href="equipes.html#u13">U13</a></li>
+        <li><a href="equipes.html#veterans">Vétérans</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <section>
-      <h2>Équipes Seniors</h2>
-      <ul>
-        <li>AS Plouhinec A – Coach : Jean Dupont</li>
-        <li>AS Plouhinec B – Coach : Marie Le Goff</li>
-      </ul>
+    <section id="equipeA">
+      <h2>Équipe A</h2>
+      <p>Présentation de l'équipe première, entraîneur, effectif, objectifs de la saison...</p>
     </section>
-    <section>
-      <h2>Équipes Jeunes</h2>
-      <ul>
-        <li>U15 – Coach : Yann Le Gall</li>
-        <li>U13 – Coach : Claire Hénaff</li>
-        <li>U11 – Coach : Lucas Bernard</li>
-      </ul>
+
+    <section id="equipeB">
+      <h2>Équipe B</h2>
+      <p>Présentation de l'équipe réserve, joueurs en formation, calendrier...</p>
+    </section>
+
+    <section id="feminines">
+      <h2>Seniors Féminines</h2>
+      <p>Présentation de l'équipe féminine senior, encadrement, résultats, recrutement...</p>
+    </section>
+
+    <section id="u17">
+      <h2>U17</h2>
+      <p>Encadrée par Julien et Marie. Entraînements les mercredis et vendredis soir.</p>
+    </section>
+
+    <section id="u15">
+      <h2>U15</h2>
+      <p>Jeunes joueurs prometteurs, tournoi départemental prévu en octobre.</p>
+    </section>
+
+    <section id="u13">
+      <h2>U13</h2>
+      <p>Découverte et progression, matchs loisirs les samedis après-midi.</p>
+    </section>
+
+    <section id="veterans">
+      <h2>Vétérans</h2>
+      <p>Ambiance conviviale pour les anciens du club. Matchs amicaux tous les mois.</p>
     </section>
   </main>
+
   <footer>
     <p>&copy; 2025 AS Plouhinec</p>
   </footer>
